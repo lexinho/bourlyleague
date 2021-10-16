@@ -8,7 +8,7 @@ function App() {
     <>
       <div>
         <Player player="Greg" />
-        <Player player="Lexa" />
+        {/* <Player player="Lexa" />
         <Player player="Giorgio" />
         <Player player="David" />
         <Player player="Cedric" />
@@ -28,7 +28,7 @@ function App() {
         <Player player="Seb" />
         <Player player="Dadoo" />
         <Player player="Amazon" />
-        <Player player="Crinou" />
+        <Player player="Crinou" /> */}
       </div>
     </>
   );
