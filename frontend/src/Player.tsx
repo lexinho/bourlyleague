@@ -1,7 +1,7 @@
 import { Stack, Tab, Tabs, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
-import Increment from "./Increment";
+import Kill from "./Kill";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -24,11 +24,11 @@ function TabPanel(props: TabPanelProps) {
         <Box sx={{ p: 3 }}>
           <Typography>{children}</Typography>
             <Stack spacing={2}>
-              <Increment type="Kill" />
-              <Increment type="Kaaris" />
+              <Kill type="Kill" />
+              {/* <Increment type="Kaaris" />
               <Increment type="Chatte" />
               <Increment type="Dabadie" />
-              <Increment type="Recaves" />
+              <Increment type="Recaves" /> */}
             </Stack>
         </Box>
       )}

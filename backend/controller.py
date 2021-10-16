@@ -1,5 +1,4 @@
-import flask
-from flask import Flask, request
+from flask import Flask
 from flask_restful import Api
 from flask_cors import CORS
 
@@ -15,8 +14,6 @@ sheet_service = SheetService.SheetService()
 def hello_world(row, col):
     sheet_service.increment_cell(row, col)
     incremented_value = sheet_service.get_cell_value(row, col)
-    response = flask.make_response()
-    # response.headers['Access-Control-Allow-Origin'] = '*'
     return "Row {} Col {} value is now {}".format(row, col, incremented_value)
 
 
@@ -26,11 +23,8 @@ def update():
     return "OK"
 
 
-@app.route("/kill")
-def kill():
-    # args = request.args
-    # print(args)
-    killed = "Toto"
-    # print(killed)
-    sheet_service.update_killed(64, 4, killed)
-    return "OK"
+@app.route("/kill/<row>/<col>/<killed>")
+def kill(row, col, killed):
+    sheet_service.update_killed(row, col, killed)
+    all_killed = sheet_service.get_cell_value(row, col)
+    return "Row {} Col {} value is now {}".format(row, col, all_killed)
