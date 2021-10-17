@@ -1,6 +1,7 @@
-import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from "@mui/material";
+import { Card, CardContent, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from "@mui/material";
 import { useState } from "react";
 import Player from "./Player";
+import Spacer from "./Spacer";
 
 function Tournoi() {
 
@@ -12,8 +13,10 @@ function Tournoi() {
 
     return (
         <>
+        <CardContent>
+                <Card>
             <FormControl fullWidth>
-            <InputLabel id="demo-simple-select-label">Tournoi</InputLabel>
+            <InputLabel id="demo-simple-select-label">Sélectionne le tournoi avant de cliquer sur tout les boutons comme un gros boulet stp merci!!!!!</InputLabel>
             <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
@@ -57,8 +60,14 @@ function Tournoi() {
                 <MenuItem value={33}>Tournoi #40 du 02/11/2021</MenuItem>
             </Select>
             </FormControl>
-
+            </Card>
+        </CardContent>
+            <Spacer y={1} />
+            <CardContent>
+                <Card>
             <Player tournoi={tournoi} />
+            </Card>
+        </CardContent>
         </>
     )
 }

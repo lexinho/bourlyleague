@@ -6,7 +6,7 @@ export async function increment (row, col) {
     `http://localhost:5000/increment/${row}/${col}`
   )
   console.log(`[SheetRepo] ${response.data}`)
-  return response.data
+  return response
 }
 
 export async function kill (row, col, killed) {
@@ -15,7 +15,7 @@ export async function kill (row, col, killed) {
     `http://localhost:5000/kill/${row}/${col}/${killed}`
   )
   console.log(`[SheetRepo] ${response.data}`)
-  return response.data
+  return response
 }
 
 export async function update (row, col, type, count) {
@@ -24,5 +24,5 @@ export async function update (row, col, type, count) {
     `http://localhost:5000/update/${row}/${col}/${count}`
   )
   console.log(`[SheetRepo] ${response.data}`)
-  return response.data
+  return response
 }

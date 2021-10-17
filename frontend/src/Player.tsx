@@ -21,9 +21,9 @@ function Player({ tournoi }: { tournoi: string }) {
 
   return (
     <div>
-      <Box sx={{ width: '100%' }}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+      {/* <Box sx={{ width: '100%' }}> */}
+        <Box >
+          <Tabs scrollButtons="auto" textColor="secondary" indicatorColor="secondary" value={value} onChange={handleChange} aria-label="basic tabs example">
             <Tab label="Greg" {...a11yProps(0)} />
             <Tab label="Lexa" {...a11yProps(1)} />
             <Tab label="Giorgio" {...a11yProps(2)} />
@@ -42,6 +42,7 @@ function Player({ tournoi }: { tournoi: string }) {
             <Tab label="Crinou" {...a11yProps(15)} />
           </Tabs>
         </Box>
+        
         <TabPanel value={value} index={0} tournoi={tournoi} />
         <TabPanel value={value} index={1} tournoi={tournoi} />
         <TabPanel value={value} index={2} tournoi={tournoi} />
@@ -58,7 +59,7 @@ function Player({ tournoi }: { tournoi: string }) {
         <TabPanel value={value} index={13} tournoi={tournoi} />
         <TabPanel value={value} index={14} tournoi={tournoi} />
         <TabPanel value={value} index={15} tournoi={tournoi} />
-      </Box>
+      {/* </Box> */}
     </div>
   );
 }

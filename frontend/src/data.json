@@ -51,6 +51,9 @@
     ],
     "tournois": [
          {
+            "points": {
+               "row": "56"
+            },
             "kill": {
                "row": "57"
             },
@@ -66,11 +69,17 @@
             "recave": {
                "row": "61"
             },
+            "gains": {
+               "row": "63"
+            },
             "killed": {
                 "row": "64"
             }
          },
          {
+             "points": {
+               "row": "65"
+            },
             "kill": {
                "row": "66"
             },
@@ -86,11 +95,17 @@
             "recave": {
                "row": "70"
             },
+            "gains": {
+               "row": "72"
+            },
             "killed": {
                 "row": "73"
             }
          },
          {
+             "points": {
+               "row": "74"
+            },
             "kill": {
                "row": "75"
             },
@@ -105,6 +120,9 @@
             },
             "recave": {
                "row": "79"
+            },
+            "gains": {
+               "row": "81"
             },
             "killed": {
                 "row": "82"
