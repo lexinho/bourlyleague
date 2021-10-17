@@ -11,16 +11,16 @@ export interface SimpleDialogProps {
 
 const killables = ['Greg', 'Lexa', 'Giorgio', 'David', 'Cedric', 'Geraldine', 'Noar', 'Rusmir', 'Gilles', 'Guillaume', 'Damien', 'Haroun', 'Seb', 'Dadoo', 'Amazon', 'Crinou'];
 
-function SimpleDialog(props: SimpleDialogProps) {
-  const { onClose, selectedValue, open } = props;
+function SimpleDialog(props: any) {
+  const { onClose, selectedValue, open, row, col, killedrow } = props;
 
   const handleClose = () => {
     onClose(selectedValue);
   };
 
   const handleListItemClick = (killable: string) => {
-    increment(57, 4)
-    kill(64, 4, killable)
+    increment(row, col)
+    kill(killedrow, col, killable)
     onClose(killable);
   };
 
@@ -38,15 +38,10 @@ function SimpleDialog(props: SimpleDialogProps) {
   );
 }
 
-function Kill({ type }: { type: string }) {
+function Fatality({row, col, killedrow}: any) {
 
   const [open, setOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState(killables[1]);
-
-  // const toggleButtonState = () => {
-  //   increment(57, 4)
-  //   kill(64, 4, "Greg")
-  // };
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -59,17 +54,19 @@ function Kill({ type }: { type: string }) {
 
   return (
     <>
-    <Button variant="outlined" onClick={handleClickOpen}>
+    <Button variant="contained" color="error" onClick={handleClickOpen}>
         Kill
       </Button>
       <SimpleDialog
         selectedValue={selectedValue}
         open={open}
         onClose={handleClose}
+        row={row}
+        col={col}
+        killedrow={killedrow}
       />
-      {/* <Button variant="contained" onClick={toggleButtonState}>{type}</Button> */}
     </>
   )
 }
 
-export default Kill;
+export default Fatality;

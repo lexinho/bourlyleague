@@ -1,10 +1,11 @@
 import "./App.css";
-import Player from "./Player";
+import Tournoi from "./Tournoi";
 
 function App() {
+  
   return (
     <>
-      <Player player="Greg" />
+      <Tournoi />
     </>
   );
 }

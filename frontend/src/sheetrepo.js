@@ -17,3 +17,12 @@ export async function kill (row, col, killed) {
   console.log(`[SheetRepo] ${response.data}`)
   return response.data
 }
+
+export async function update (row, col, type, count) {
+  console.log(`[SheetRepo] Updating ${type}`)
+  const response = await axios.get(
+    `http://localhost:5000/update/${row}/${col}/${count}`
+  )
+  console.log(`[SheetRepo] ${response.data}`)
+  return response.data
+}

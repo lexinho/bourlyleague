@@ -17,10 +17,11 @@ def hello_world(row, col):
     return "Row {} Col {} value is now {}".format(row, col, incremented_value)
 
 
-@app.route("/update")
-def update():
-    sheet_service.increment_cell(57, 4)
-    return "OK"
+@app.route("/update/<row>/<col>/<count>")
+def update(row, col, count):
+    sheet_service.update_cell(row, col, count)
+    incremented_value = sheet_service.get_cell_value(row, col)
+    return "Row {} Col {} value is now {}".format(row, col, incremented_value)
 
 
 @app.route("/kill/<row>/<col>/<killed>")
