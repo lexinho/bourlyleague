@@ -1,7 +1,7 @@
 import { Card, CardContent, Divider, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Fatality from "./Fatality";
-import data from './data.json'
+import data from '../data.json'
 import Increment from "./Increment";
 import Vote from "./Vote";
 import Spacer from "./Spacer";

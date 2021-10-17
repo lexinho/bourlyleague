@@ -11,7 +11,7 @@ sheet_service = SheetService.SheetService()
 
 
 @app.route("/increment/<row>/<col>")
-def hello_world(row, col):
+def increment(row, col):
     sheet_service.increment_cell(row, col)
     incremented_value = sheet_service.get_cell_value(row, col)
     return "Row {} Col {} value is now {}".format(row, col, incremented_value)

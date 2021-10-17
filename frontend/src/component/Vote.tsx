@@ -1,9 +1,9 @@
 import { Button, TextField } from "@mui/material";
 import { useDispatch } from "react-redux";
-import { updateAlert } from "./alertSlice";
+import { updateAlert } from "../common/alertSlice";
 
 import { useState } from "react";
-import { update } from "./sheetrepo";
+import { update } from "../common/sheetrepo";
 
 function Vote({type, row, col}: any) {
     const dispatch = useDispatch()

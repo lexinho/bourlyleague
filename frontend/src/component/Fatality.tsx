@@ -1,9 +1,9 @@
 import { Dialog, DialogTitle, List, ListItem, ListItemText } from "@mui/material";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import { increment, kill } from "./sheetrepo";
+import { increment, kill } from "../common/sheetrepo";
 import { useDispatch } from "react-redux";
-import { updateAlert } from "./alertSlice";
+import { updateAlert } from "../common/alertSlice";
 
 export interface SimpleDialogProps {
   open: boolean;

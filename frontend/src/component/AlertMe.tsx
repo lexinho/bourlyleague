@@ -1,8 +1,8 @@
 import { Alert, Collapse, IconButton } from "@mui/material";
 import { useState } from "react";
 import CloseIcon from '@mui/icons-material/Close';
-import { useAppSelector } from "./useStore";
-import { updateAlert } from "./alertSlice";
+import { useAppSelector } from "../common/useStore";
+import { updateAlert } from "../common/alertSlice";
 import { useDispatch } from "react-redux";
 
 function AlertMe() {

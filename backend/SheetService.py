@@ -10,7 +10,10 @@ class SheetService:
 
     def increment_cell(self, row, col):
         val = self.get_cell_value(row, col)
-        val_updated = int(str(val)) + 1
+        if val is None:
+            val_updated = 1
+        else:
+            val_updated = int(str(val)) + 1
         self.update_cell(row, col, str(val_updated))
 
     def update_cell(self, row, col, value):

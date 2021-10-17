@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
-import { increment } from "./sheetrepo";
+import { increment } from "../common/sheetrepo";
 import { useDispatch } from "react-redux";
-import { updateAlert } from "./alertSlice";
+import { updateAlert } from "../common/alertSlice";
 
 function Increment({type, row, col}: any) {
 

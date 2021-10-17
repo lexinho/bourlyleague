@@ -6,7 +6,7 @@ import AlertMe from './AlertMe';
 import "./App.css";
 import DenseAppBar from "./DenseAppBar";
 import Spacer from "./Spacer";
-import store from './store';
+import store from '../common/store';
 import Tournoi from "./Tournoi";
 
 function App() {
