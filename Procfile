@@ -1,1 +1,1 @@
-web: gunicorn bourlyleague:app
+web: gunicorn main:app
