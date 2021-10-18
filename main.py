@@ -4,8 +4,7 @@ from flask_cors import CORS
 
 import SheetService
 
-app = Flask(__name__ 
-    ,static_folder='frontend/build',static_url_path='')
+app = Flask(__name__ ,static_folder='frontend/build',static_url_path='')
 cors = CORS(app)
 api = Api(app)
 sheet_service = SheetService.SheetService()
@@ -34,6 +33,10 @@ def kill(row, col, killed):
 @app.route('/')
 def serve():
     return send_from_directory(app.static_folder, 'index.html')
+
+@app.errorhandler(404)
+def not_found(e):
+    return app.send_static_file("index.html")
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
