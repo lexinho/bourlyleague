@@ -127,6 +127,162 @@
             "killed": {
                 "row": "82"
             }
+         },
+         {
+             "points": {
+               "row": "83"
+            },
+            "kill": {
+               "row": "84"
+            },
+            "kaaris": {
+               "row": "85"
+            },
+            "chatte": {
+               "row": "86"
+            },
+            "dabadie": {
+               "row": "87"
+            },
+            "recave": {
+               "row": "88"
+            },
+            "gains": {
+               "row": "90"
+            },
+            "killed": {
+                "row": "91"
+            }
+         },
+         {
+             "points": {
+               "row": "92"
+            },
+            "kill": {
+               "row": "93"
+            },
+            "kaaris": {
+               "row": "94"
+            },
+            "chatte": {
+               "row": "95"
+            },
+            "dabadie": {
+               "row": "96"
+            },
+            "recave": {
+               "row": "97"
+            },
+            "gains": {
+               "row": "99"
+            },
+            "killed": {
+                "row": "100"
+            }
+         },
+         {
+             "points": {
+               "row": "101"
+            },
+            "kill": {
+               "row": "102"
+            },
+            "kaaris": {
+               "row": "103"
+            },
+            "chatte": {
+               "row": "104"
+            },
+            "dabadie": {
+               "row": "105"
+            },
+            "recave": {
+               "row": "106"
+            },
+            "gains": {
+               "row": "108"
+            },
+            "killed": {
+                "row": "109"
+            }
+         },
+         {
+             "points": {
+               "row": "110"
+            },
+            "kill": {
+               "row": "111"
+            },
+            "kaaris": {
+               "row": "112"
+            },
+            "chatte": {
+               "row": "113"
+            },
+            "dabadie": {
+               "row": "114"
+            },
+            "recave": {
+               "row": "115"
+            },
+            "gains": {
+               "row": "117"
+            },
+            "killed": {
+                "row": "118"
+            }
+         },
+         {
+             "points": {
+               "row": "119"
+            },
+            "kill": {
+               "row": "120"
+            },
+            "kaaris": {
+               "row": "121"
+            },
+            "chatte": {
+               "row": "122"
+            },
+            "dabadie": {
+               "row": "123"
+            },
+            "recave": {
+               "row": "124"
+            },
+            "gains": {
+               "row": "126"
+            },
+            "killed": {
+                "row": "127"
+            }
+         },
+         {
+             "points": {
+               "row": "128"
+            },
+            "kill": {
+               "row": "129"
+            },
+            "kaaris": {
+               "row": "130"
+            },
+            "chatte": {
+               "row": "131"
+            },
+            "dabadie": {
+               "row": "132"
+            },
+            "recave": {
+               "row": "133"
+            },
+            "gains": {
+               "row": "135"
+            },
+            "killed": {
+                "row": "136"
+            }
          }
          
       ]
